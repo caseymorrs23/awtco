@@ -56,7 +56,28 @@
         <img src="logo.jpg" alt="A Window Tinting Co. Logo" class="h-12">
         <h1 class="text-xl font-bold text-teal-700">A Window Tinting Co.</h1>
       </div>
-      <nav class="space-x-6 text-sm font-medium text-gray-700">
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-700" id="desktopNav">
+        <a href="#home" class="hover:text-teal-600">Home</a>
+        <a href="#services" class="hover:text-teal-600">Services</a>
+        <a href="#reviews" class="hover:text-teal-600">Reviews</a>
+        <a href="#blog" class="hover:text-teal-600">Blog</a>
+        <a href="#about" class="hover:text-teal-600">About Us</a>
+        <a href="#contact" class="hover:text-teal-600">Contact</a>
+      </nav>
+
+      <!-- Mobile Hamburger -->
+      <button id="menuBtn" aria-controls="mobileMenu" aria-expanded="false" class="md:hidden inline-flex items-center justify-center p-2 rounded-md border border-gray-300 text-gray-700" title="Open menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t bg-white">
+      <nav class="px-4 py-3 grid gap-3 text-gray-700 text-sm font-medium">
         <a href="#home" class="hover:text-teal-600">Home</a>
         <a href="#services" class="hover:text-teal-600">Services</a>
         <a href="#reviews" class="hover:text-teal-600">Reviews</a>
@@ -72,7 +93,7 @@
     <div class="max-w-3xl mx-auto">
       <h2 class="text-4xl font-bold mb-4">Bonney Lake's Window Tinting Specialists</h2>
       <p class="text-xl mb-6">Privacy, protection, and performance for your home or business.</p>
-      <a href="#contact" class="bg-teal-500 hover:bg-teal-600 px-6 py-3 rounded-full text-white text-lg">Get a Free Quote</a>
+      <a href="#contact" class="px-6 py-3 rounded-full border-2 border-white text-white font-semibold hover:bg-white hover:text-gray-900 transition">Get a Free Quote</a>
     </div>
   </section>
 
@@ -202,7 +223,8 @@
       <p class="mb-6">Maggie Browne – Owner/Operator</p>
       <p class="mb-2">📞 <a href="tel:2064379866" class="text-teal-600 font-medium">206-437-9866</a></p>
       <p class="mb-6">📧 <a href="mailto:awtintingco@gmail.com" class="text-teal-600 font-medium">awtintingco@gmail.com</a></p>
-      <form action="https://formsubmit.co/awtintingco@gmail.com" method="POST" class="space-y-4 mt-6 text-left">
+      <form action="https://formsubmit.co/awtintingco@gmail.com" method="POST" class="space-y-6 mt-6 text-left">
+        <!-- Keep existing functionality -->
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_subject" value="New Quote Request from A Window Tinting Co.">
         <input type="hidden" name="_next" value="https://www.awindowtintingco.com/thank-you.html">
@@ -210,20 +232,20 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label class="block text-sm font-medium text-gray-700" for="name">Full Name</label>
-            <input id="name" type="text" name="Full Name" placeholder="Jane Smith" class="mt-1 w-full px-4 py-2 border rounded-md" required />
+            <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+            <input id="name" type="text" name="name" placeholder="Jane Smith" required class="mt-1 w-full px-4 py-2 border rounded-md" />
           </div>
           <div>
-            <label class="block text-sm font-medium text-gray-700" for="email">Email</label>
-            <input id="email" type="email" name="Email" placeholder="you@email.com" class="mt-1 w-full px-4 py-2 border rounded-md" required />
+            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+            <input id="email" type="email" name="email" placeholder="you@email.com" required class="mt-1 w-full px-4 py-2 border rounded-md" />
           </div>
           <div>
-            <label class="block text-sm font-medium text-gray-700" for="phone">Phone</label>
-            <input id="phone" type="tel" name="Phone" placeholder="(206) 555‑0123" class="mt-1 w-full px-4 py-2 border rounded-md" required />
+            <label for="phone" class="block text-sm font-medium text-gray-700">Phone (optional)</label>
+            <input id="phone" type="tel" name="phone" placeholder="(206) 555-0123" class="mt-1 w-full px-4 py-2 border rounded-md" />
           </div>
           <div>
-            <label class="block text-sm font-medium text-gray-700" for="service">Service Interested In</label>
-            <select id="service" name="Service" class="mt-1 w-full px-4 py-2 border rounded-md" required>
+            <label for="service" class="block text-sm font-medium text-gray-700">Service Interested In</label>
+            <select id="service" name="service" class="mt-1 w-full px-4 py-2 border rounded-md">
               <option value="" disabled selected>Select a service</option>
               <option>Residential Tinting</option>
               <option>Commercial Tinting</option>
@@ -235,10 +257,12 @@
           </div>
         </div>
 
-        <label class="block text-sm font-medium text-gray-700" for="message">Project Details</label>
-        <textarea id="message" name="Message" placeholder="Tell us about your windows, goals (heat, privacy, UV), and timeline." class="mt-1 w-full px-4 py-2 border rounded-md" rows="4"></textarea>
+        <div>
+          <label for="message" class="block text-sm font-medium text-gray-700">Project Details</label>
+          <textarea id="message" name="message" placeholder="Tell us about your windows, goals (heat, privacy, UV), and timeline." rows="4" required class="mt-1 w-full px-4 py-2 border rounded-md"></textarea>
+        </div>
 
-        <button type="submit" class="bg-teal-500 hover:bg-teal-600 text-black px-6 py-3 rounded-md w-full font-semibold">Send Message</button>
+        <button type="submit" class="px-6 py-3 rounded-full border-2 border-teal-600 text-teal-600 font-semibold hover:bg-teal-600 hover:text-white transition w-full">Send Message</button>
       </form>
     </div>
   </section>
@@ -274,5 +298,19 @@
     </div>
     <div class="mt-8 text-gray-500">&copy; 2025 A Window Tinting Co. | Bonney Lake, WA</div>
   </footer>
+
+  <script>
+    (function(){
+      const btn = document.getElementById('menuBtn');
+      const menu = document.getElementById('mobileMenu');
+      if(btn && menu){
+        btn.addEventListener('click', () => {
+          const isOpen = !menu.classList.contains('hidden');
+          menu.classList.toggle('hidden');
+          btn.setAttribute('aria-expanded', String(!isOpen));
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
