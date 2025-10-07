@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,48 +6,273 @@
   <title>A Window Tinting Co. | Bonney Lake, WA</title>
   <meta name="description" content="Residential and Commercial Window Tinting in Bonney Lake, WA - UV protection, privacy, safety, and style.">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <script defer>
-    document.addEventListener('DOMContentLoaded', () => {
-      const toggle = document.getElementById('nav-toggle');
-      const menu = document.getElementById('nav-menu');
-      toggle.addEventListener('click', () => {
-        menu.classList.toggle('hidden');
-      });
-    });
+
+  <!-- Canonical & Social -->
+  <link rel="canonical" href="https://www.awindowtintingco.com/">
+  <meta property="og:title" content="A Window Tinting Co. | Bonney Lake, WA">
+  <meta property="og:description" content="Residential and Commercial Window Tinting in Bonney Lake, WA - UV protection, privacy, safety, and style.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.awindowtintingco.com/">
+  <meta property="og:site_name" content="A Window Tinting Co.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="A Window Tinting Co. | Bonney Lake, WA">
+  <meta name="twitter:description" content="Residential and Commercial Window Tinting in Bonney Lake, WA - UV protection, privacy, safety, and style.">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0d9488">
+
+  <!-- LocalBusiness JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "A Window Tinting Co.",
+    "image": "https://www.awindowtintingco.com/logo.jpg",
+    "telephone": "+1-206-437-9866",
+    "email": "awtintingco@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bonney Lake",
+      "addressRegion": "WA",
+      "addressCountry": "US"
+    },
+    "url": "https://www.awindowtintingco.com",
+    "serviceArea": {
+      "@type": "Place",
+      "name": ["Bonney Lake", "Lake Tapps", "Sumner", "Puyallup", "Buckley", "Enumclaw", "Auburn", "Maple Valley"]
+    }
+  }
   </script>
 </head>
-<body class="text-gray-800 font-sans">
-  <!-- Navigation -->
+<body class="text-gray-800 font-sans antialiased">
+  <!-- Header -->
   <header class="bg-white shadow sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
       <div class="flex items-center space-x-4">
         <img src="logo.jpg" alt="A Window Tinting Co. Logo" class="h-12">
         <h1 class="text-xl font-bold text-teal-700">A Window Tinting Co.</h1>
       </div>
-      <div class="md:hidden">
-        <button id="nav-toggle" class="text-gray-700 focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
-      <nav class="hidden md:flex space-x-4 text-sm font-medium text-gray-700">
+      <nav class="space-x-6 text-sm font-medium text-gray-700">
         <a href="#home" class="hover:text-teal-600">Home</a>
         <a href="#services" class="hover:text-teal-600">Services</a>
-        <a href="#about" class="hover:text-teal-600">About</a>
         <a href="#reviews" class="hover:text-teal-600">Reviews</a>
-        <a href="#areas" class="hover:text-teal-600">Service Areas</a>
+        <a href="#blog" class="hover:text-teal-600">Blog</a>
+        <a href="#about" class="hover:text-teal-600">About Us</a>
         <a href="#contact" class="hover:text-teal-600">Contact</a>
       </nav>
     </div>
-    <div id="nav-menu" class="md:hidden hidden px-4 pb-4 space-y-2 text-sm font-medium text-gray-700">
-      <a href="#home" class="block hover:text-teal-600">Home</a>
-      <a href="#services" class="block hover:text-teal-600">Services</a>
-      <a href="#about" class="block hover:text-teal-600">About</a>
-      <a href="#reviews" class="block hover:text-teal-600">Reviews</a>
-      <a href="#areas" class="block hover:text-teal-600">Service Areas</a>
-      <a href="#contact" class="block hover:text-teal-600">Contact</a>
-    </div>
   </header>
+
+  <!-- Hero -->
+  <section id="home" class="bg-gray-900 text-white text-center py-24 px-6">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-4xl font-bold mb-4">Bonney Lake's Window Tinting Specialists</h2>
+      <p class="text-xl mb-6">Privacy, protection, and performance for your home or business.</p>
+      <a href="#contact" class="bg-teal-500 hover:bg-teal-600 px-6 py-3 rounded-full text-white text-lg">Get a Free Quote</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20 px-6 max-w-7xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <img src="glare.jpg" class="w-full h-auto mb-4 rounded" alt="Glare Reduction">
+        <h3 class="text-xl font-semibold mb-2">Glare Reduction</h3>
+        <p>Professional glare reduction to improve comfort, safety, and efficiency.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <img src="heat.jpg" class="w-full h-auto mb-4 rounded" alt="Heat Rejection">
+        <h3 class="text-xl font-semibold mb-2">Heat Rejection</h3>
+        <p>Professional heat rejection to improve comfort, safety, and efficiency.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <img src="uv.jpg" class="w-full h-auto mb-4 rounded" alt="UV Protection">
+        <h3 class="text-xl font-semibold mb-2">UV Protection</h3>
+        <p>Professional UV protection to improve comfort, safety, and efficiency.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <img src="privacy.jpg" class="w-full h-auto mb-4 rounded" alt="Privacy Film">
+        <h3 class="text-xl font-semibold mb-2">Privacy Film</h3>
+        <p>Professional privacy film to improve comfort, safety, and efficiency.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <img src="decorative.jpg" class="w-full h-auto mb-4 rounded" alt="Decorative Film">
+        <h3 class="text-xl font-semibold mb-2">Decorative Film</h3>
+        <p>Professional decorative film to improve comfort, safety, and efficiency.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <img src="security.jpg" class="w-full h-auto mb-4 rounded" alt="Safety & Security">
+        <h3 class="text-xl font-semibold mb-2">Safety & Security</h3>
+        <p>Professional safety & security film to improve comfort, safety, and efficiency.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews" class="bg-gray-50 py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">What Our Customers Say</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow text-center">
+          <p class="text-yellow-500 text-xl mb-2">★★★★★</p>
+          <p class="italic mb-4">“Fantastic service and amazing results! My home is cooler and looks great.”</p>
+          <p class="font-semibold">— Sarah L.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow text-center">
+          <p class="text-yellow-500 text-xl mb-2">★★★★★</p>
+          <p class="italic mb-4">“Professional, friendly, and efficient. Highly recommend A Window Tinting Co.”</p>
+          <p class="font-semibold">— Mark R.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow text-center">
+          <p class="text-yellow-500 text-xl mb-2">★★★★★</p>
+          <p class="italic mb-4">“Excellent quality and attention to detail. I’ll be using them again for my office.”</p>
+          <p class="font-semibold">— Emily T.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Cards (links out to full posts) -->
+  <section id="blog" class="bg-gray-50 py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Window Tinting Insights & Tips</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <article class="bg-white rounded-xl shadow p-6 flex flex-col">
+          <img src="/blog-energy.jpg" alt="Sunlight through tinted windows reducing energy costs" class="rounded mb-4 h-48 w-full object-cover" loading="lazy">
+          <h3 class="text-xl font-semibold mb-2">How Window Film Cuts Energy Bills</h3>
+          <p class="text-gray-600 flex-grow">Learn how the right tint can lower cooling costs by blocking heat while letting in natural light.</p>
+          <a href="/blog/energy-bills.html" class="mt-4 text-teal-600 font-medium hover:underline">Read More →</a>
+        </article>
+        <article class="bg-white rounded-xl shadow p-6 flex flex-col">
+          <img src="/blog-privacy.jpg" alt="Office with frosted privacy film applied to windows" class="rounded mb-4 h-48 w-full object-cover" loading="lazy">
+          <h3 class="text-xl font-semibold mb-2">Privacy Films for Homes & Offices</h3>
+          <p class="text-gray-600 flex-grow">Discover the benefits of frosted and decorative films that provide privacy without sacrificing light.</p>
+          <a href="/blog/privacy-films.html" class="mt-4 text-teal-600 font-medium hover:underline">Read More →</a>
+        </article>
+        <article class="bg-white rounded-xl shadow p-6 flex flex-col">
+          <img src="/blog-security.jpg" alt="Shatter-resistant window film on storefront glass" class="rounded mb-4 h-48 w-full object-cover" loading="lazy">
+          <h3 class="text-xl font-semibold mb-2">Safety & Security: More Than Tint</h3>
+          <p class="text-gray-600 flex-grow">Explore how security films help protect against break-ins, accidents, and severe weather damage.</p>
+          <a href="/blog/security-films.html" class="mt-4 text-teal-600 font-medium hover:underline">Read More →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 px-6 bg-gray-50">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-6">About A Window Tinting Co.</h2>
+      <p class="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-12">We install premium window films for homes and businesses across the Plateau. From hot summer glare to privacy concerns, our solutions are designed to make your space more comfortable, efficient, and secure. Owner‑operator <strong>Maggie Browne</strong> ensures every job is quoted clearly and finished cleanly.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="p-6 bg-white rounded-xl border">
+          <h3 class="font-semibold mb-3 text-teal-700">Service Area</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-gray-50 border text-gray-700 text-sm">Bonney Lake</span>
+            <span class="px-3 py-1 rounded-full bg-gray-50 border text-gray-700 text-sm">Lake Tapps</span>
+            <span class="px-3 py-1 rounded-full bg-gray-50 border text-gray-700 text-sm">Sumner</span>
+            <span class="px-3 py-1 rounded-full bg-gray-50 border text-gray-700 text-sm">Puyallup</span>
+            <span class="px-3 py-1 rounded-full bg-gray-50 border text-gray-700 text-sm">Buckley</span>
+            <span class="px-3 py-1 rounded-full bg-gray-50 border text-gray-700 text-sm">Enumclaw</span>
+            <span class="px-3 py-1 rounded-full bg-gray-50 border text-gray-700 text-sm">Auburn</span>
+            <span class="px-3 py-1 rounded-full bg-gray-50 border text-gray-700 text-sm">Maple Valley</span>
+          </div>
+        </div>
+        <div class="p-6 bg-white rounded-xl border">
+          <h3 class="font-semibold mb-3 text-teal-700">Hours</h3>
+          <ul class="text-gray-700 text-sm space-y-1">
+            <li class="flex justify-between"><span>Mon–Fri</span><span>8:00–5:00</span></li>
+            <li class="flex justify-between"><span>Saturday</span><span>By appointment</span></li>
+            <li class="flex justify-between"><span>Sunday</span><span>Closed</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 px-6 bg-white">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Request a Free Quote</h2>
+      <p class="mb-6">Maggie Browne – Owner/Operator</p>
+      <p class="mb-2">📞 <a href="tel:2064379866" class="text-teal-600 font-medium">206-437-9866</a></p>
+      <p class="mb-6">📧 <a href="mailto:awtintingco@gmail.com" class="text-teal-600 font-medium">awtintingco@gmail.com</a></p>
+      <form action="https://formsubmit.co/awtintingco@gmail.com" method="POST" class="space-y-4 mt-6 text-left">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Quote Request from A Window Tinting Co.">
+        <input type="hidden" name="_next" value="https://www.awindowtintingco.com/thank-you.html">
+        <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off">
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium text-gray-700" for="name">Full Name</label>
+            <input id="name" type="text" name="Full Name" placeholder="Jane Smith" class="mt-1 w-full px-4 py-2 border rounded-md" required />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700" for="email">Email</label>
+            <input id="email" type="email" name="Email" placeholder="you@email.com" class="mt-1 w-full px-4 py-2 border rounded-md" required />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700" for="phone">Phone</label>
+            <input id="phone" type="tel" name="Phone" placeholder="(206) 555‑0123" class="mt-1 w-full px-4 py-2 border rounded-md" required />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700" for="service">Service Interested In</label>
+            <select id="service" name="Service" class="mt-1 w-full px-4 py-2 border rounded-md" required>
+              <option value="" disabled selected>Select a service</option>
+              <option>Residential Tinting</option>
+              <option>Commercial Tinting</option>
+              <option>Privacy Film</option>
+              <option>Decorative Film</option>
+              <option>Safety/Security Film</option>
+              <option>Anti-Graffiti Film</option>
+            </select>
+          </div>
+        </div>
+
+        <label class="block text-sm font-medium text-gray-700" for="message">Project Details</label>
+        <textarea id="message" name="Message" placeholder="Tell us about your windows, goals (heat, privacy, UV), and timeline." class="mt-1 w-full px-4 py-2 border rounded-md" rows="4"></textarea>
+
+        <button type="submit" class="bg-teal-500 hover:bg-teal-600 text-black px-6 py-3 rounded-md w-full font-semibold">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-10 text-sm text-gray-600 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <img src="logo.jpg" alt="A Window Tinting Co. logo" class="h-10 w-auto">
+          <span class="font-bold text-teal-700">A Window Tinting Co.</span>
+        </div>
+        <p>Residential & commercial window film installations in Bonney Lake and the surrounding Plateau communities.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-2">Contact</h3>
+        <ul class="space-y-1">
+          <li><a href="tel:2064379866" class="hover:underline">(206) 437‑9866</a></li>
+          <li><a href="mailto:awtintingco@gmail.com" class="hover:underline">awtintingco@gmail.com</a></li>
+          <li>Bonney Lake, WA 98391</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-2">Quick Links</h3>
+        <ul class="space-y-1">
+          <li><a href="#services" class="hover:underline">Services</a></li>
+          <li><a href="#reviews" class="hover:underline">Reviews</a></li>
+          <li><a href="#blog" class="hover:underline">Blog</a></li>
+          <li><a href="#about" class="hover:underline">About</a></li>
+          <li><a href="#contact" class="hover:underline">Free Quote</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-8 text-gray-500">&copy; 2025 A Window Tinting Co. | Bonney Lake, WA</div>
+  </footer>
 </body>
 </html>
